@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { routingModule } from './app.routing';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
@@ -19,9 +24,15 @@ import { ItemsService } from './items/_services/items.service';
     ItemAddEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    RouterModule,
+    routingModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [
+    { provide: APP_BASE_HREF, useValue: '/'},
     ItemsService,
   ],
   bootstrap: [AppComponent]
