@@ -13,6 +13,7 @@ import { ItemsListItemComponent } from './items/items-list-item/items-list-item.
 import { ItemEditComponent } from './items/item-edit/item-edit.component';
 import { ItemAddEditComponent } from './items/item-add-edit/item-add-edit.component';
 import { ItemsService } from './items/_services/items.service';
+import { FakeBackendInterceptor } from './_shared/fakebackend';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,11 @@ import { ItemsService } from './items/_services/items.service';
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/'},
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: FakeBackendInterceptor,
+      multi: true
+    },
     ItemsService,
   ],
   bootstrap: [AppComponent]
