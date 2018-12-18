@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crud-example';
+
+  navToggle: Boolean = false;
+
+  toggleNav() {
+    this.navToggle  = !this.navToggle;
+  }
 }
