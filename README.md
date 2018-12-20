@@ -1,27 +1,52 @@
-# CrudExample
+# Angular simple CRUD example
+This project is a stripped down version of my Angular Dashboard Starterkit Template: https://github.com/fransyozef/basic-login-angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+The authentication part is stripped out, just leaving the "Items" feature.
 
-## Development server
+## Why?
+The purpose of this project is a little demonstration about how to 
+- structure your components
+- do CRUD api calls
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I've also written a Medium article with some information: https://medium.com/@fransyozef/angular-dashboard-starterkit-template-cruding-it-8a87080bb01
 
-## Code scaffolding
+## What's in this project?
+- Bootstrap 4 (https://getbootstrap.com/)
+- Angular 6 (https://angular.io/)
+- A fake backend service to handle the api request
+- Angular Routing system
+- Some RxJS function (http://reactivex.io/) 
+- Feature "Items"   : Add / Delete / Edit items using CRUD (Create Read Update Delete) methods
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Install and run this project
+- Install NodeJS (https://nodejs.org)
+- Install Angular CLI (https://cli.angular.io/)
+- Download or clone this repository on your computer
+- Open your termninal and navigate to the project root folder and enter :  ``` npm install ```
+- Next to build and start the project : ``` npm start ```
+- Open your browser and navigate to http://localhost:4200/
+- 
+## That's all folks
+Well that's it for now. You can find me on linkedIn : https://www.linkedin.com/in/fransjoleihitu/
 
-## Build
+Also read my articles on Medium and clap me :) : https://medium.com/@fransyozef
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+And checkout out my Instagram page: https://www.instagram.com/thehangrycoder/
 
-## Running unit tests
+If you have any questions/suggestions please don't hessitate.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Amatoooooo
 
-## Running end-to-end tests
+Fransjo Leihitu
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+License
+----
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT
+
+DISCLAIMER
+THIS PROJECT IS AS IS.
+
+
+**Free Software, Hell Yeah!**
