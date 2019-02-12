@@ -7,7 +7,7 @@ import { ItemsService } from './items/_services/items.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'crud-example';
+  title = 'crud-example-angular';
 
   navToggle: Boolean = false;
 

@@ -1,6 +1,6 @@
 {
-  "name": "crud-example",
-  "version": "0.0.0",
+  "name": "crud-example-angular",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

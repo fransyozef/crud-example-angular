@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crud-example": {
+    "crud-example-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/crud-example",
+            "outputPath": "dist/crud-example-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "crud-example:build"
+            "browserTarget": "crud-example-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "crud-example:build:production"
+              "browserTarget": "crud-example-angular:build:production"
             }
           }
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "@angular-devkit/build-angular-angular:extract-i18n",
           "options": {
-            "browserTarget": "crud-example:build"
+            "browserTarget": "crud-example-angular:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "crud-example-e2e": {
+    "crud-example-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "crud-example:serve"
+            "devServerTarget": "crud-example-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "crud-example:serve:production"
+              "devServerTarget": "crud-example-angular:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "crud-example"
+  "defaultProject": "crud-example-angular"
 }
