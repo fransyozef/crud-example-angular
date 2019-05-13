@@ -44,6 +44,26 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "no-mocks": {
+              "fileReplacements": [
+                {
+                  "replace": "src/app/_shared/fakebackend.ts",
+                  "with": "src/app/_shared/fakebackend.prod.ts"
+                }
+              ]
+            },
+            "api": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.api.ts"
+                },
+                {
+                  "replace": "src/app/_shared/fakebackend.ts",
+                  "with": "src/app/_shared/fakebackend.prod.ts"
+                }
+              ]
             }
           }
         },
@@ -55,6 +75,12 @@
           "configurations": {
             "production": {
               "browserTarget": "crud-example-angular:build:production"
+            },
+            "no-mocks": {
+              "browserTarget": "crud-example-angular:build:no-mocks"
+            },
+            "api": {
+              "browserTarget": "crud-example-angular:build:api"
             }
           }
         },

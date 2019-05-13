@@ -1,4 +1,4 @@
-# Angular simple CRUD example v1.0.0
+# Angular simple CRUD example
 This project is a stripped down version of my Angular Dashboard Starterkit Template: https://github.com/fransyozef/basic-login-angular
 
 The authentication part is stripped out, just leaving the "Items" feature.
